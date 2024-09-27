@@ -2,11 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+.navbar a.active {
+    color: #09242E !important;
+    font-weight: bold !important;
+    border-bottom: 2px solid #09242E !important;
+
+}
+
+.statistics .CircularProgressbar .CircularProgressbar-path {
+    stroke: #09242E !important;
+    stroke-linecap: initial !important  ;
+    /* stroke-width:  */
+}
+
+.statistics .CircularProgressbar .CircularProgressbar-text {
+    fill: #474747 !important;
+    /* font-size: 16px; */
 }

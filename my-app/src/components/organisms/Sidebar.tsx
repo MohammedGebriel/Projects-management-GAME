@@ -1,7 +1,6 @@
 import LogoLargeScreen from '../../assets/Logo 1.jpg'
 import LogoSmallScreen from '../../assets/Logo 2.png'
 import ProfileSidebar from '../../assets/profile sidebar.png'
-// import CompanyProject from '../../assets/company project.png'
 import { FaChevronDown,FaThLarge  } from "react-icons/fa";
 import { AiFillHome  } from "react-icons/ai";
 import SidebarPath from '../templates/sidebar/SidebarPath';
@@ -11,7 +10,7 @@ import { FaGear,FaPlus,FaEllipsis   } from "react-icons/fa6";
 
 export default function Sidebar() {
     return (
-        <div className="w-[90px] lg:w-[260px] h-screen p-[20px] border-r-[4px] border-[#DBEDF5] flex flex-col justify-between">
+        <div className=" sticky left-0 top-0 w-[90px] lg:w-[260px] h-screen p-[20px] border-r-[2px] border-[#DBEDF5] flex flex-col justify-between bg-white">
             <div className="top flex flex-col gap-[30px] lg:gap-[40px]">
                 <div className="image flex justify-center">
                     <img className="hidden lg:block h-full" src={LogoLargeScreen} alt="" />
@@ -31,7 +30,7 @@ export default function Sidebar() {
                 </div>
                 <div className=' -mx-[20px]'>
                     <SidebarPath path='/' title='Dashboard' icon={<AiFillHome />}  />
-                    <SidebarPath path='/' title='Projects' icon={<FaThLarge />} count={10} className='border-l-[4px] border-[#09242E] bg-[#F0F7FF]'/>
+                    <SidebarPath path='/' title='Projects' icon={<FaThLarge />} /*count={10}*/ className='border-l-[4px] border-[#09242E] bg-[#F0F7FF]'/>
                     <SidebarPath path='/' title='Setting' icon={<FaGear />}  />
                 </div>
             </div>
@@ -42,7 +41,7 @@ export default function Sidebar() {
                     <span className='text-[#5F6D7E] text-[22px] lg:hidden'><FaThLarge /></span>
 
                 </div>
-                <div className='flex cursor-pointer items-center  gap-[10px] shadow-[1px_1px_10px_rgb(0,0,0,0.1)] w-full lg:w-full  h-[58px] rounded-[10px] border border-[#DBEDF5] p-[5px]'>
+                <div className='flex cursor-pointer items-center  gap-[10px]  w-full lg:w-full  h-[58px] rounded-[10px] border border-[#DBEDF5] shadow-[1px_1px_10px_rgb(0,0,0,0.1)] p-[5px]'>
                     <img src={ProfileSidebar} className='h-[48px] w-full lg:w-[48px] ' alt="" />
                     <div className='hidden lg:block'>
                         <h3 className='text-[14px] font-medium text-[#53515B]'>Harry Jones</h3>
@@ -51,6 +50,6 @@ export default function Sidebar() {
                     <FaEllipsis className='hidden lg:block'/>
                 </div>
             </div>
-        </div>
+        </div>  
     )
 }

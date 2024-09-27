@@ -3,8 +3,11 @@ import Layout from "../components/organisms/Layout";
 
 export default function Root() {
     return (
-        <Layout>
-            <Outlet />
-        </Layout>
+        <div className="relative">
+            <Layout>
+                <Outlet />
+            </Layout>
+        </div>
+
     )
 } 
