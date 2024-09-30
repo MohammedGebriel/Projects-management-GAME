@@ -14,9 +14,28 @@ body{
     color: #09242E !important;
     font-weight: bold !important;
     border-bottom: 2px solid #09242E !important;
-
 }
 
+@media (max-width: 1024px) {
+    .navbar a {
+        width: 100% !important;
+        margin: auto !important;
+        padding: 5px;
+
+    }
+    .navbar a.active {
+        color: #5F6D7E !important;
+        background-color: rgba(111, 131, 156, 0.418) !important;
+        border-bottom: none !important;
+
+    }
+    .navbar a:hover {
+        color: #5F6D7E !important;
+        background-color: rgba(111, 131, 156, 0.418) !important;
+        font-weight: bold !important;
+
+    }
+}
 .statistics .CircularProgressbar .CircularProgressbar-path {
     stroke: #09242E !important;
     stroke-linecap: initial !important  ;
@@ -26,4 +45,18 @@ body{
 .statistics .CircularProgressbar .CircularProgressbar-text {
     fill: #474747 !important;
     /* font-size: 16px; */
+}
+
+.mantine-Drawer-title.m_615af6c9 {
+    font-size: 20px !important;
+}
+
+.m_1b7284a3.mantine-Paper-root {
+    width: 300px !important;
+}
+
+.m_77c9d27d {
+    padding: 0 !important;
+    background: white !important;
+    color: #5F6D7E !important;
 }

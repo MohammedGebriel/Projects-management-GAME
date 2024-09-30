@@ -6,7 +6,7 @@ type Notifications_TP = {
 
 export default function Notifications({className}:Notifications_TP) {
     return (
-        <div className={`${className} sticky  top-0 w-[300px] max-h-screen overflow-y-auto p-[20px] pt-[40px] hidden xl:flex flex-col gap-[10px] bg-white`}>
+        <div className={`${className} sticky  top-0 w-[300px] h-screen !overflow-y-auto   p-[20px] pt-[40px] hidden xl:flex flex-col gap-[10px] bg-white`}>
             <div className="heading flex justify-between">
                 <div className="text-[#91969B] flex items-center gap-[5px]">
                     <FaBell className=""/>
@@ -22,6 +22,16 @@ export default function Notifications({className}:Notifications_TP) {
             <Notification status='todo' title='Todo' description="Hello Phillip, let's see your progress in 2020, and fix it "/>
             <Notification status='inprogress' title='Inprogress' description="Hello Phillip, let's see your progress in 2020, and fix it "/>
             <Notification status='done' title='Done' description="Hello Phillip, let's see your progress in 2020, and fix it "/>
+            
+{/*             
+            <Notification status='done' title='Done' description="Hello Phillip, let's see your progress in 2020, and fix it "/>
+            <Notification status='done' title='Done' description="Hello Phillip, let's see your progress in 2020, and fix it "/>
+            <Notification status='done' title='Done' description="Hello Phillip, let's see your progress in 2020, and fix it "/>
+            <Notification status='done' title='Done' description="Hello Phillip, let's see your progress in 2020, and fix it "/>
+            <Notification status='done' title='Done' description="Hello Phillip, let's see your progress in 2020, and fix it "/>
+            <Notification status='done' title='Done' description="Hello Phillip, let's see your progress in 2020, and fix it "/>
+            <Notification status='done' title='Done' description="Hello Phillip, let's see your progress in 2020, and fix it "/>
+             */}
             
         </div>
     )

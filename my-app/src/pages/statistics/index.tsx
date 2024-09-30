@@ -3,7 +3,7 @@ import StatisticsBox from "../../components/templates/statistics/StatisticsBox";
 import { FaChartColumn } from "react-icons/fa6";
 import { FiTrendingUp } from "react-icons/fi";
 import { BsFillGridFill,BsFillGrid1X2Fill,BsFillPieChartFill   } from "react-icons/bs";
-import { ProjectProgress, SectionHeader } from "../../components/atoms";
+import { MainProgress, SectionHeader } from "../../components/atoms";
 import { Link } from "react-router-dom";
 import StatisticsProgress from "../../components/templates/statistics/StaticticsProgress";
 import TasksProgress from "../../components/templates/statistics/TasksProgress";
@@ -24,7 +24,7 @@ export default function Statistics() {
                     <SectionHeader icon={<BsFillGridFill />} header='Project Progress'>
                         <Link to='/' className="text-[#478FB4] underline font-semibold text-[12px]">Details</Link>
                     </SectionHeader>
-                    <ProjectProgress />
+                    <MainProgress progress="50%" />
                     {/* Seperator */}
                     <SectionHeader icon={<BsFillPieChartFill />} header="Statistics (Progress)" >
                         <Link to='/' className="text-[#478FB4] underline font-semibold text-[12px]">Details</Link>

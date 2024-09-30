@@ -14,10 +14,6 @@ export default {
       done: '#00B884',
       todo: '#478FB4', 
       white: '#fff',
-
-
-
-
     },
     extend: {},
   },

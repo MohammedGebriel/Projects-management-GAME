@@ -2,7 +2,6 @@
 import {MainTitle} from "../../components/atoms";
 import ProjectsFilter from "../../components/templates/Projects/ProjectsFilter";
 import { FaThLarge  } from "react-icons/fa";
-import { FaBell } from "react-icons/fa6";
 import SingleProject from "../../components/templates/Projects/SingleProject";
 import { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalContext";
@@ -12,7 +11,7 @@ import ShowNotification from "../../components/templates/notifications/ShowNotif
 export default function Projects() {
     const {allProject} = useContext(GlobalContext);
     return (
-        <div className="flex flex-col gap-[15px] border-[2px] flex-1 bg-white border-[#EAEBF0] lg:mr-[10px]   p-[20px]">
+        <div className="flex flex-col gap-[15px] border-[2px] flex-1 bg-white border-[#EAEBF0] xl:mr-[10px]   p-[20px]">
             <div className="flex justify-between">
                 <div>
                     <MainTitle title="Projects" />
@@ -20,12 +19,7 @@ export default function Projects() {
                         Welcome Jamal Al Sanaferi
                     </p>
                 </div>
-                <ShowNotification>
-                    <div className="text-[20px] relative">
-                        <FaBell />
-                        <span className="absolute -top-[10px] -right-[10px] bg-[#e02626] w-[20px] h-[20px] rounded-full text-[12px] flex justify-center items-center text-white font-bold ">0</span>
-                    </div>
-                </ShowNotification>
+                <ShowNotification />
             </div>
             <ProjectsFilter />
             <div className="flex justify-between items-center">

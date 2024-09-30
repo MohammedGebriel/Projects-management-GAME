@@ -43,3 +43,7 @@ export type Member_TP = {
     email: string,
     phone: string,
 }
+
+export type MainProgress_TP = {
+    progress: string
+}

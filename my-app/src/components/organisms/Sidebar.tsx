@@ -5,6 +5,7 @@ import { FaChevronDown,FaThLarge  } from "react-icons/fa";
 import { AiFillHome  } from "react-icons/ai";
 import SidebarPath from '../templates/sidebar/SidebarPath';
 import { FaGear,FaPlus,FaEllipsis   } from "react-icons/fa6";
+// import ShowNotification from '../templates/notifications/ShowNotification';
 
 
 
@@ -28,7 +29,13 @@ export default function Sidebar() {
                         <FaChevronDown  />
                     </span>
                 </div>
+
                 <div className=' -mx-[20px]'>
+                        {/* <div className='flex gap-[5px] lg:gap-[10px] w-full justify-center cursor-pointer  py-[10px] items-center px-[7px] lg:px-[20px] '>
+                            <span className='text-[#5F6D7E] text-[22px] ml-[5px]'></span>
+                            <p className={`text-sidebar_links font-semibold w-[130px] hidden lg:block `}>Notification</p>
+                        </div> */}
+                    {/* <ShowNotification /> */}
                     <SidebarPath path='/' title='Dashboard' icon={<AiFillHome />}  />
                     <SidebarPath path='/' title='Projects' icon={<FaThLarge />} /*count={10}*/ className='border-l-[4px] border-[#09242E] bg-[#F0F7FF]'/>
                     <SidebarPath path='/' title='Setting' icon={<FaGear />}  />

@@ -12,5 +12,5 @@ export default function TasksProgressBox({percentage,task_title}:TasksProgressBo
             <CircularProgressbar className='w-[60%] h-[80px]' value={percentage} text={`${percentage}%`} />
             <p className='font-semibold text-[15px] text-[#041116]'>{task_title}</p>
         </div>
-    )
+    ) 
 }
