@@ -51,7 +51,7 @@ export default function Reports() {
                     </div>
                 </SectionHeader>
                 <PATDocumentsContent />
-
+                
                 <SectionHeader icon={<FaFolder  />} header="Dependencies">
                     <div className="flex gap-[10px] items-center">
                         <button className="prev  text-[#478FB4] flex justify-center items-center  text-[16px]">
