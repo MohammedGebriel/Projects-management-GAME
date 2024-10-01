@@ -47,3 +47,11 @@ export type Member_TP = {
 export type MainProgress_TP = {
     progress: string
 }
+
+export type Project_TP = {
+    id: number,
+    projectName: string,
+    projectDescription: string,
+    status: string,
+    progress?: string 
+}

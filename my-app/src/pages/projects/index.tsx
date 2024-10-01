@@ -6,6 +6,7 @@ import SingleProject from "../../components/templates/Projects/SingleProject";
 import { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalContext";
 import ShowNotification from "../../components/templates/notifications/ShowNotification";
+import { Project_TP } from "../../Types";
 
 
 export default function Projects() {
@@ -31,7 +32,7 @@ export default function Projects() {
             </div>
             <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-[15px]">
                 {
-                    allProject.map((project) => 
+                    allProject.map((project:Project_TP) => 
                         <SingleProject 
                             key= {project.id}
                             id = {project.id}

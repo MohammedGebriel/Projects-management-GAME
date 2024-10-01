@@ -1,4 +1,6 @@
-export const allProjects = [
+import { Project_TP } from "../Types";
+
+export const allProjects:Project_TP[] = [
     {
         id:0,
         projectName: 'Project One',

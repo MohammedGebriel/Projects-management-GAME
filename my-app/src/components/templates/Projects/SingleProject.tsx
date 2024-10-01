@@ -6,7 +6,7 @@ type SingleProject_TP = {
     project_name: string,
     project_description: string,
     status: string,
-    progress: number
+    progress: string
 }
 
 export default function SingleProject({id,project_name,project_description,status,progress}:SingleProject_TP) {
