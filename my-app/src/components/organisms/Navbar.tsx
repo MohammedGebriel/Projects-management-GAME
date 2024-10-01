@@ -5,7 +5,7 @@ type Navbar_TP = {
 }
 export default function Navbar({nav_id,className}:Navbar_TP) {
     return (
-        <div className={`h-[40px] navbar flex gap-[10px] border-b border-[#EAEBF0] text-[14px] text-[#4A4646] ${className}`}>
+        <div className={`h-[40px] z-50 navbar flex gap-[10px] border-b border-[#EAEBF0] text-[14px] text-[#4A4646] ${className}`}>
             <NavLink className='' to={`/projects/${nav_id}/overview`}>Overview</NavLink>
             <NavLink className='' to={`/projects/${nav_id}/statistics`}>Statistics</NavLink>
             <NavLink className='' to={`/projects/${nav_id}/wbs`}>WBS</NavLink>

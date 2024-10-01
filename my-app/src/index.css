@@ -60,3 +60,8 @@ body{
     background: white !important;
     color: #5F6D7E !important;
 }
+
+
+.css-ihlsro-MuiDataGrid-root .MuiDataGrid-container--top [role=row] {
+    background-color: #f7f7f9 !important;
+}

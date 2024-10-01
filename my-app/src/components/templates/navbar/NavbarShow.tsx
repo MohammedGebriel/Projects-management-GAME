@@ -21,10 +21,11 @@ export default function NavbarShow() {
             >
                 <Navbar nav_id={id} className='flex-col items-center border-none w-full' />
             </Drawer>
-
+            
             <Button onClick={open}>
                 <span className='text-[#5F6D7E] text-[22px] mx-auto sm:ml-[5px] block lg:hidden'><FaBars/></span>
             </Button>
+
         </div>
     )
 }
