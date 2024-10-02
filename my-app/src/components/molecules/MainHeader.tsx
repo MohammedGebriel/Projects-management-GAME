@@ -5,13 +5,18 @@ import { useContext, useEffect, useState } from "react";
 import Navbar from "../organisms/Navbar";
 import ShowNotification from "../templates/notifications/ShowNotification";
 import NavbarShow from "../templates/navbar/NavbarShow";
+import { Project_TP } from '../../Types'
 
 export default function MainHeader() {
     const {id} = useParams()
+        //@ts-expect-error
+
     const {allProject} = useContext(GlobalContext);
     const [currentProject,setCurrentProject] = useState({})
     const handleFilter = () => {
-        const filter = allProject.filter((project) => project.id == id)
+            //@ts-expect-error
+
+        const filter = allProject.filter((project:Project_TP) => project.id == id)
         setCurrentProject(filter[0])
     }
     
@@ -21,9 +26,11 @@ export default function MainHeader() {
     
 
     return (
+        
         <div className="flex flex-col gap-[15px]">
             <div className="flex items-center justify-between">
                 <div>
+                    
                     <MainTitle title={currentProject.projectName} />
                     <UpdateTime update_time="30 February 2024"  />
                 </div>

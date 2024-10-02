@@ -53,5 +53,5 @@ export type Project_TP = {
     projectName: string,
     projectDescription: string,
     status: string,
-    progress?: string 
+    progress: string 
 }

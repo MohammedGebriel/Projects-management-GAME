@@ -10,6 +10,7 @@ import { Project_TP } from "../../Types";
 
 
 export default function Projects() {
+    //@ts-expect-error
     const {allProject} = useContext(GlobalContext);
     return (
         <div className="flex flex-col gap-[15px] border-[2px] flex-1 bg-white border-[#EAEBF0] xl:mr-[10px]   p-[20px]">
