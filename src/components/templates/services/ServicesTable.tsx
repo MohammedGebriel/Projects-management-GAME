@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 const columns: GridColDef[] = [
   { field: 'id', headerName: '#', width: 60 },
   { field: 'materialsCode', headerName: 'Materials Code', width: 130 },
-  { field: 'description', headerName: 'Description', width: 130 },
+  { field: 'description', headerName: 'Description', width: 180 },
   {
     field: 'status',
     headerName: 'Status',

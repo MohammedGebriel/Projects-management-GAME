@@ -32,7 +32,7 @@ export default function MileStonesTask() {
                     <RiFileList2Line  className="text-[#09242E] text-[18px]"/>
                     <span className="font-medium text-[14px] text-[#041116]">Quantity</span>
                 </div>
-                <div className="flex items-center gap-[10px]">
+                <div className="flex items-center gap-[10px] min-w-[160px] justify-between">
                     <button className="rounded-[5px] border border-[#DBEDF5] shadow px-[5px] w-[80px]">4000</button>
                     <p className="text-[12px] font-bold text-[#041116]">Units</p>
                     <p className="text-[12px]  text-[#30637C]">Bags</p>
@@ -43,7 +43,7 @@ export default function MileStonesTask() {
                     <FaCloud   className="text-[#09242E] text-[18px]"/>
                     <span className="font-medium text-[14px] text-[#041116]">Completion Rate</span>
                 </div>
-                <div className="flex items-center gap-[10px]">
+                <div className="flex items-center gap-[10px] min-w-[160px] ">
                     <button className="rounded-[5px] border border-[#DBEDF5] shadow px-[5px] w-[80px]">4</button>
                     {/* <p className="text-[12px] font-bold text-[#041116]">Units</p> */}
                     <p className="text-[12px]  text-[#30637C]">%</p>
@@ -54,7 +54,7 @@ export default function MileStonesTask() {
                     <FaQrcode   className="text-[#09242E] text-[18px]"/>
                     <span className="font-medium text-[14px] text-[#041116]">Item Code</span>
                 </div>
-                <div className="flex items-center gap-[10px]">
+                <div className="flex items-center gap-[10px] min-w-[160px] justify-between">
                     <button className="rounded-[5px] border border-[#DBEDF5] shadow px-[5px] min-w-[80px]">4387525</button>
                     <p className="text-[12px] font-bold text-[#041116]">Item</p>
                     <p className="text-[12px]  text-[#30637C]">023</p>
