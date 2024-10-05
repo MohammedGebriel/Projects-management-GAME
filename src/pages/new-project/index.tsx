@@ -28,8 +28,8 @@ export default function NewProject() {
                     <FaEllipsis className="text-[#478FB4] text-[18px]"/>
                 </div>
             </div>
-            <div className="search-map">
-                <img src={SearchMapImage} className="max-w-full min-h-[150px]" alt="" />
+            <div className="search-map w-full">
+                <img src={SearchMapImage} className="w-full max-h-[150px]" alt="" />
             </div>
 
             <div className="project-information flex flex-col gap-[20px]">

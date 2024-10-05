@@ -27,18 +27,18 @@ export default function InspectionItem() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id dui mi. Fusce varius bibendum ante, non lacinia. Fall usasc ce variu slorem ipsum dolor sit amet
             </p>
             <div className="flex flex-col sm:flex-row gap-[10px] justify-between items-center">
-                <div className="flex items-center gap-[10px]">
+                <div className="flex items-center gap-[10px] w-[160px]">
                     <RiFileList2Line   className="text-[#09242E] text-[18px]"/>
                     <span className="font-medium text-[14px] text-[#041116]">Quantity</span>
                 </div>
-                <div className="flex items-center gap-[10px]">
+                <div className="flex items-center gap-[10px] ">
                     <button className="rounded-[5px] border border-[#DBEDF5] shadow px-[5px] w-[80px]">4000</button>
                     <p className="text-[12px] font-bold text-[#041116]">Units</p>
                     <p className="text-[12px]  text-[#30637C]">Bags</p>
                 </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-[10px] justify-between items-center">
-                <div className="flex items-center gap-[10px]">
+                <div className="flex items-center gap-[10px] ">
                     <FaQrcode   className="text-[#09242E] text-[18px]"/>
                     <span className="font-medium text-[14px] text-[#041116]">Item Code</span>
                 </div>

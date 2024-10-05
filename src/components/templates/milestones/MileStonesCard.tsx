@@ -28,7 +28,7 @@ export default function MileStonesCard() {
                 </div>
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-center gap-[10px]">
                 <button className='p-[5px] rounded-[15px] bg-[#478FB4] w-[30px] h-[30px] flex justify-center items-center text-[white] text-[18px]'><RiShutDownLine /></button>
                 <button className='p-[5px] rounded-[15px] bg-[#478FB4] w-[30px] h-[30px] flex justify-center items-center text-[white] text-[18px]'><FaTrash /></button>
                 <button className='p-[5px] rounded-[15px] bg-[#478FB4] w-[30px] h-[30px] flex justify-center items-center text-[white] text-[18px]'><FaPen /></button>
