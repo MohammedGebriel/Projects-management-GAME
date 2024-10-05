@@ -6,7 +6,7 @@ import { AiFillHome  } from "react-icons/ai";
 import SidebarPath from '../templates/sidebar/SidebarPath';
 import { FaGear,FaPlus,FaEllipsis   } from "react-icons/fa6";
 // import ShowNotification from '../templates/notifications/ShowNotification';
-
+import {Link} from 'react-router-dom'
 
 
 export default function Sidebar() {
@@ -42,12 +42,11 @@ export default function Sidebar() {
                 </div>
             </div>
             <div className="bottom  flex  flex-col gap-[30px] lg:gap-[40px]">
-                <div className='flex cursor-pointer gap-[10px] flex-col items-center shadow-[1px_1px_10px_rgb(0,0,0,0.1)] w-fit lg:w-full  h-[90px] rounded-[10px] border border-[#DBEDF5] py-[10px] px-[5px] lg:px-[20px]'>
+                <Link to='new-project' className='flex cursor-pointer gap-[10px] flex-col items-center shadow-[1px_1px_10px_rgb(0,0,0,0.1)] w-fit lg:w-full  h-[90px] rounded-[10px] border border-[#DBEDF5] py-[10px] px-[5px] lg:px-[20px]'>
                     <span className=' w-[40px] h-[40px] flex justify-center items-center text-[20px] border border-dashed rounded-full border-[#91969B] text-[#91969B]'><FaPlus /></span>
                     <p className='text-project_title text-[14px] font-medium hidden lg:block'>Add New Project</p>
                     <span className='text-[#5F6D7E] text-[22px] lg:hidden'><FaThLarge /></span>
-
-                </div>
+                </Link>
                 <div className='flex cursor-pointer items-center  gap-[10px]  w-full lg:w-full  h-[58px] rounded-[10px] border border-[#DBEDF5] shadow-[1px_1px_10px_rgb(0,0,0,0.1)] p-[5px]'>
                     <img src={ProfileSidebar} className='h-[48px] w-full lg:w-[48px] ' alt="" />
                     <div className='hidden lg:block'>

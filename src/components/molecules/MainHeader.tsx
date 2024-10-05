@@ -9,13 +9,11 @@ import { Project_TP } from '../../Types'
 
 export default function MainHeader() {
     const {id} = useParams()
-        //@ts-expect-error
 
     const {allProject} = useContext(GlobalContext);
     const [currentProject,setCurrentProject] = useState({})
     const handleFilter = () => {
-            //@ts-expect-error
-
+            
         const filter = allProject.filter((project:Project_TP) => project.id == id)
         setCurrentProject(filter[0])
     }
