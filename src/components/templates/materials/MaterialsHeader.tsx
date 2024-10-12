@@ -2,10 +2,11 @@
 import { FaFilter } from "react-icons/fa6";
 import { FaTrash } from "react-icons/fa6";
 import MaterialsLinksMenu from './MaterialsLinksMenu'
-import OrderButton from "./OrderButton";
-import ReturnButton from "./ReturnButton";
-import DeductButton from "./DeductButton";
-import SwapButton from "./SwapButton";
+import CreateOrder from "./CreateOrder";
+import CreateDeduct from "./CreateDeduct";
+import CreateSwap from "./CreateSwap";
+import CreateReturn from "./CreateReturn";
+
 export default function MaterialsHeader() {
     return (
         <div className="flex flex-col lg:flex-row gap-[10px] lg:items-center justify-between">
@@ -22,11 +23,11 @@ export default function MaterialsHeader() {
             </div>
             <div>
                 <div className="flex gap-[10px] lg:gap-[15px] items-center flex-wrap">
-                        <OrderButton />
-                        <SwapButton />
-                        <DeductButton />
-                        <ReturnButton />
-                    </div>
+                    <CreateOrder />
+                    <CreateDeduct />
+                    <CreateSwap />
+                    <CreateReturn />
+                </div>
             </div>
         </div>
     )

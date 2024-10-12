@@ -1,10 +1,12 @@
-import { FaChevronLeft, FaChevronRight, FaFolder, FaPlus } from "react-icons/fa6";
+import { FaChevronLeft, FaChevronRight, FaFolder, } from "react-icons/fa6";
 import MainHeader from "../../components/molecules/MainHeader";
 import { SectionHeader } from "../../components/atoms";
 import PenaltiesContent from "../../components/templates/reports/PenaltiesContent";
 import SiteDairyContent from "../../components/templates/reports/SiteDairyContent";
 import PATDocumentsContent from "../../components/templates/reports/PATDocumentsContent";
 import DependenciesContent from "../../components/templates/reports/DependenciesContent";
+import CreatePenalties from "../../components/templates/reports/CreatePenalties";
+import CreateDocuments from "../../components/templates/reports/CreateDocuments";
 
 export default function Reports() {
     return (
@@ -19,8 +21,8 @@ export default function Reports() {
                         <button className="next  text-[#478FB4]  flex justify-center items-center  text-[16px]">
                             <FaChevronRight />
                         </button>
-                        <button className="flex justify-center items-center w-[18px] h-[18px] text-[10px] text-white bg-[#000] rounded-[6px]"><FaPlus/></button>
-
+                        {/* <button className="flex justify-center items-center w-[18px] h-[18px] text-[10px] text-white bg-[#000] rounded-[6px]"><FaPlus/></button> */}
+                        <CreatePenalties />
                     </div>
                 </SectionHeader>
                 <PenaltiesContent />
@@ -47,7 +49,8 @@ export default function Reports() {
                         <button className="next  text-[#478FB4]  flex justify-center items-center  text-[16px]">
                             <FaChevronRight />
                         </button>
-                        <button className="flex justify-center items-center w-[18px] h-[18px] text-[10px] text-white bg-[#000] rounded-[6px]"><FaPlus/></button>
+                        {/* <button className="flex justify-center items-center w-[18px] h-[18px] text-[10px] text-white bg-[#000] rounded-[6px]"><FaPlus/></button> */}
+                        <CreateDocuments />
                     </div>
                 </SectionHeader>
                 <PATDocumentsContent />

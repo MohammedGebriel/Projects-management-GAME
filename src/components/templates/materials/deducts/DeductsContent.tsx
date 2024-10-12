@@ -2,8 +2,9 @@ import { SectionHeader } from "../../../atoms";
 import { Link } from "react-router-dom";
 import DeductItem from "./DeductItem";
 import { FaCircleMinus, FaFilter } from "react-icons/fa6";
-import DeductButton from "../DeductButton";
+// import DeductButton from "../DeductButton";
 import MaterialsLinksMenu from "../MaterialsLinksMenu";
+import CreateDeduct from "../CreateDeduct";
 
 export default function DeductsContent() {
     return (
@@ -17,7 +18,8 @@ export default function DeductsContent() {
                 </div>
                 <div>
                     <div className="flex gap-[10px] lg:gap-[15px] items-center flex-wrap">
-                            <DeductButton />
+                            {/* <DeductButton /> */}
+                            <CreateDeduct />
                     </div>
                 </div>
             </div>

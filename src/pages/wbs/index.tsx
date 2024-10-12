@@ -3,8 +3,8 @@ import { FaFileAlt } from "react-icons/fa";
 import { SectionHeader } from "../../components/atoms";
 import MainHeader from "../../components/molecules/MainHeader";
 import WBSFilter from "../../components/templates/wbs/WBSFilter";
-import { FaPlus } from "react-icons/fa6";
 import WBSContent from "../../components/templates/wbs/WBSContent";
+import CreateWorkOrder from "../../components/templates/wbs/CreateWorkOrder";
 
 export default function WBS() {
     return (
@@ -14,7 +14,7 @@ export default function WBS() {
             <div className="flex flex-col gap-[10px]">
                 <SectionHeader icon={<FaFileAlt />} header="Work Orders">
                     <div className="flex gap-[10px]">
-                        <button className="flex justify-center items-center w-[18px] h-[18px] text-[10px] text-white bg-[#000] rounded-[6px]"><FaPlus/></button>
+                        <CreateWorkOrder />
                     </div>
                 </SectionHeader>
                 <WBSContent />

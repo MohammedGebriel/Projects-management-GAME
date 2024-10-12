@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaFilter, FaRepeat } from "react-icons/fa6";
 import MaterialsLinksMenu from "../MaterialsLinksMenu";
 import SwapItem from "./SwapItem";
-import SwapButton from "../SwapButton";
+import CreateSwap from "../CreateSwap";
 
 export default function SwapsContent() {
     return (
@@ -17,7 +17,8 @@ export default function SwapsContent() {
                 </div>
                 <div>
                     <div className="flex gap-[10px] lg:gap-[15px] items-center flex-wrap">
-                        <SwapButton />
+                        {/* <SwapButton /> */}
+                        <CreateSwap />
                     </div>
                 </div>
             </div>

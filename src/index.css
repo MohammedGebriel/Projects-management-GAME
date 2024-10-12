@@ -4,6 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    /* Forms */
+    .form-container-modal {
+        @apply rounded-xl px-5  py-5 lg:px-10 bg-white shadow flex flex-col gap-3 min-w-72 lg:min-w-96
+    }
+    .input-container {
+        @apply flex flex-col gap-1 w-full
+    }
+    .input-label {
+        @apply font-medium text-sm text-brandColor
+    }
+    .input {
+        @apply w-full min-h-10 py-2 px-3 border border-mainBorder outline-none shadow text-xs text-primaryColor
+    }
+    .input-text-icon {
+        @apply text-primaryColor absolute top-1/2 -translate-y-1/2 right-3 text-sm
+    }
+    .action-button {
+        @apply h-12 rounded-lg flex justify-center items-center bg-brandColor w-full text-white
+    }
+    .add-button {
+        @apply flex justify-center items-center size-5 text-xs text-white bg-black rounded-md
+    }
+    .action-buttons-container {
+        @apply flex gap-3 mt-3
+    }
+    
+}
 
 body{
     font-family: "Inter", sans-serif;

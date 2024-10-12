@@ -1,5 +1,6 @@
-import { FaBell,FaPlus } from "react-icons/fa6";
+import { FaBell } from "react-icons/fa6";
 import Notification from "../templates/notifications/Notification";
+import CreateNotification from "../templates/notifications/CreateNotification";
 type Notifications_TP = {
     className? : string,
 }
@@ -13,7 +14,8 @@ export default function Notifications({className}:Notifications_TP) {
                     <p className="text-[14px] hidden lg:block">Notifications</p>
                 </div>
                 <button className=" bg-[#000] w-[18px] h-[18px] flex justify-center items-center rounded">
-                    <FaPlus  className="text-[13px] text-white"/>
+                    {/* <FaPlus  className="text-[13px] text-white"/> */}
+                    <CreateNotification />
                 </button>
             </div>
             <Notification status='todo' title='Todo' description="Hello Phillip, let's see your progress in 2020, and fix it "/>

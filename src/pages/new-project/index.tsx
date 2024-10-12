@@ -31,7 +31,6 @@ export default function NewProject() {
             <div className="search-map w-full">
                 <img src={SearchMapImage} className="w-full max-h-[150px]" alt="" />
             </div>
-
             <div className="project-information flex flex-col gap-[20px]">
                 <SectionHeader icon={<BsExclamationCircleFill  />} header="Project Information">
                         <div className="flex gap-[10px] items-center">

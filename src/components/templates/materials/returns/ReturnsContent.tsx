@@ -2,8 +2,9 @@ import { SectionHeader } from "../../../atoms";
 import { Link } from "react-router-dom";
 import { FaFilter, FaRightLeft } from "react-icons/fa6";
 import MaterialsLinksMenu from "../MaterialsLinksMenu";
-import ReturnButton from "../ReturnButton";
+// import ReturnButton from "../ReturnButton";
 import ReturnItem from "./ReturnItem";
+import CreateReturn from "../CreateReturn";
 
 export default function ReturnsContent() {
     return (
@@ -17,7 +18,8 @@ export default function ReturnsContent() {
                 </div>
                 <div>
                     <div className="flex gap-[10px] lg:gap-[15px] items-center flex-wrap">
-                        <ReturnButton />
+                        {/* <ReturnButton /> */}
+                        <CreateReturn />
                     </div>
                 </div>
             </div>

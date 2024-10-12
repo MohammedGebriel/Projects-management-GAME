@@ -2,8 +2,9 @@ import { SectionHeader } from "../../../atoms";
 import { Link } from "react-router-dom";
 import {  FaFileLines, FaFilter } from "react-icons/fa6";
 import MaterialsLinksMenu from "../MaterialsLinksMenu";
-import OrderButton from "../OrderButton";
+// import OrderButton from "../OrderButton";
 import OrderItem from "./OrderItem";
+import CreateOrder from "../CreateOrder";
 
 export default function OrdersContent() {
     return (
@@ -17,7 +18,8 @@ export default function OrdersContent() {
                 </div>
                 <div>
                     <div className="flex gap-[10px] lg:gap-[15px] items-center flex-wrap">
-                        <OrderButton />
+                        {/* <OrderButton /> */}
+                        <CreateOrder />
                     </div>
                 </div>
             </div>

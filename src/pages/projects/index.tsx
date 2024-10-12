@@ -17,7 +17,7 @@ export default function Projects() {
             <div className="flex justify-between">
                 <div>
                     <MainTitle title="Projects" />
-                    <p className="text-[#09242E] leading-[24px] text-[13px] lg:text-[18px]">
+                    <p className="text-[#09242E] leading-[24px] text-[13px] lg:text-[18px] ">
                         Welcome Jamal Al Sanaferi
                     </p>
                 </div>
