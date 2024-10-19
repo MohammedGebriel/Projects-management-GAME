@@ -13,11 +13,11 @@ export default function Projects() {
     //@ts-expect-error
     const {allProject} = useContext(GlobalContext);
     return (
-        <div className="flex flex-col gap-[15px] border-[2px] flex-1 bg-white border-[#EAEBF0] xl:mr-[10px]   p-[20px]">
+        <div className="page">
             <div className="flex justify-between">
                 <div>
                     <MainTitle title="Projects" />
-                    <p className="text-[#09242E] leading-[24px] text-[13px] lg:text-[18px] ">
+                    <p className="text-brandColor leading-6 text-sm lg:text-lg ">
                         Welcome Jamal Al Sanaferi
                     </p>
                 </div>
@@ -25,13 +25,13 @@ export default function Projects() {
             </div>
             <ProjectsFilter />
             <div className="flex justify-between items-center">
-                <div className="flex items-center gap-[5px] text-[#91969B]">
-                    <span className="text-[18px]"><FaThLarge/></span>
-                    <p className="text-[14px]">Projects</p>
+                <div className="flex items-center gap-1.5 text-textColor">
+                    <span className="text-lg"><FaThLarge/></span>
+                    <p className="text-sm">Projects</p>
                 </div>
                 {/* <Link to='' className="text-[#478FB4] text-[12px] font-semibold underline">Details</Link> */}
             </div>
-            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-[15px]">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
                 {
                     allProject.map((project:Project_TP) => 
                         <SingleProject 

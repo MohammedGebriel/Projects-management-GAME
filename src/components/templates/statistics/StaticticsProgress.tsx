@@ -3,7 +3,7 @@ import StatisticsProgressBox from "./StatisticsProgressBox";
 export default function StatisticsProgress() {
     return (
         <div className="flex md:justify-center">
-            <div className="w-full grid md:grid-cols-3 xl:grid-cols-4 gap-[20px]" >
+            <div className="w-full grid md:grid-cols-3 xl:grid-cols-4 gap-5" >
                 <StatisticsProgressBox percentage={55} month='January' />
                 <StatisticsProgressBox percentage={90} month='February' />
                 <StatisticsProgressBox percentage={86} month='March' />

@@ -3,7 +3,7 @@ import SwapsContent from "../../../components/templates/materials/swaps/SwapsCon
 
 export default function Swaps() {
     return (
-        <div className="!overflow-x-hidden flex flex-col gap-[15px] border-[2px] flex-1 bg-white border-[#EAEBF0] lg:mr-[10px]   p-[20px] ">
+        <div className="!overflow-x-hidden page">
             <MainHeader />
             <SwapsContent />
         </div>

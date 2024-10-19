@@ -10,7 +10,7 @@ import Profile8 from '../../../assets/profile (7).png'
 
 export default function ProjectMembers() {
     return (
-        <div className="grid sm:grid-cols-2 gap-[20px]">
+        <div className="grid sm:grid-cols-2 gap-5">
             <Member image={Profile1} name="Jaxson" job_description="General Manager" email="Jaxson@gmail.com" phone="+62 812-9875-1298"/>
             <Member image={Profile2} name="Harry Jones" job_description="Planning Manager" email="Harry.Jones@gmail.com" phone="+62 812-9875-1298"/>
             <Member image={Profile3} name="Jakob Siphron" job_description="Project Manager" email="Jakob.Siphron@gmail.com" phone="+62 812-9875-1298"/>
@@ -19,7 +19,6 @@ export default function ProjectMembers() {
             <Member image={Profile6} name="Roger Aminoff" job_description="Contractor" email="Roger Aminoff@gmail.com" phone="+62 812-9875-1298"/>
             <Member image={Profile7} name="Lindsey Vetrovs" job_description="Inspector" email="Lindsey.vetrovs@gmail.com" phone="+62 812-9875-1298"/>
             <Member image={Profile8} name="Ashlynn Westervelt" job_description="Store Manager" email="Ashlynn.West@gmail.com" phone="+62 812-9875-1298"/>
-
         </div>
     )
 }

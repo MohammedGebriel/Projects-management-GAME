@@ -25,14 +25,14 @@ export default function MainHeader() {
 
     return (
         
-        <div className="flex flex-col gap-[15px]">
+        <div className="flex flex-col gap-4">
             <div className="flex items-center justify-between">
                 <div>
                     
                     <MainTitle title={currentProject.projectName} />
                     <UpdateTime update_time="30 February 2024"  />
                 </div>
-                <div className="flex items-center gap-[10px]">
+                <div className="flex items-center gap-2.5">
                     <ShowNotification />
                     <NavbarShow />
                 </div>

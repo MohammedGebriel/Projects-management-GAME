@@ -17,11 +17,11 @@ export default function ShowNotification() {
             id='notification-drawer'
             // position='right'
             >
-                <Notifications className='!flex !w-full !p-[0]  !overflow-y-visible ' />
+                <Notifications className='!flex !w-full !p-0  !overflow-y-visible ' />
             </Drawer>
 
             <Button onClick={open}>
-                <span className='text-[#5F6D7E] text-[22px] mx-auto sm:ml-[5px]'><FaBell /></span>
+                <span className='text-buttonColor text-xl mx-auto sm:ml-1'><FaBell /></span>
             </Button>
         </div>
         );

@@ -10,20 +10,20 @@ type statisticBox_TP = {
 
 export default function StatisticsBox({name,first,second,link,icon}:statisticBox_TP) {
     return (
-        <div className=" rounded-[10px] border border-[#DBEDF5] p-[10px] flex-1 shadow flex flex-col gap-[10px]">
-            <div className="flex justify-between items-center ">
-                <div className="flex items-center gap-[5px]">
-                    <div className="w-[18px] h-[18px] text-[13px] bg-[#000] text-white flex justify-center items-center">{icon}</div>
-                    <p className="text-[#041116] text-[13px] font-medium">{name}</p>
+        <div className=" rounded-xl border border-mainBorder p-2.5 flex-1 shadow flex flex-col gap-2.5">
+            <div className="flex justify-between items-center">
+                <div className="flex items-center gap-1.5">
+                    <div className="size-5 text-xs bg-black text-white flex justify-center items-center">{icon}</div>
+                    <p className="text-brandColor text-xs font-medium">{name}</p>
                 </div>
-                <FaEllipsis className="text-[14px]" />
+                <FaEllipsis className="text-sm" />
             </div>
-            <div className="flex justify-between items-center h-[30px]">
-                <p className="text-[#A1A1A1] text-[14px]">
-                    <span className="text-[#041116] text-[25px]  font-bold">{first}</span>
+            <div className="flex justify-between items-center h-8">
+                <p className="text-primaryColor text-sm">
+                    <span className="text-brandColor text-2xl font-bold">{first}</span>
                     <span>{second}</span>
                 </p>
-                <Link to={link} className="text-[#478FB4] underline font-semibold text-[12px]">See All</Link>
+                <Link to={link} className="link">See All</Link>
             </div>
         </div>
     )

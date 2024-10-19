@@ -6,9 +6,9 @@ type SectionHeader_TP = {
 export default function SectionHeader({icon,header,children}:SectionHeader_TP) {
     return (
         <div className="flex justify-between">
-            <div className="flex items-center gap-[5px] text-[#91969B]">
-                <span className="text-[16px]">{icon}</span>
-                <p className="text-[14px]">{header}</p>
+            <div className="flex items-center gap-1.5 text-textColor">
+                <span className="text-base">{icon}</span>
+                <p className="text-xs">{header}</p>
             </div>
             <div>
                 {children}

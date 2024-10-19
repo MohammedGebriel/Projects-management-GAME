@@ -1,4 +1,3 @@
-
 import { FaFileAlt } from "react-icons/fa";
 import { SectionHeader } from "../../components/atoms";
 import MainHeader from "../../components/molecules/MainHeader";
@@ -8,12 +7,12 @@ import InspectionsContent from "../../components/templates/inspections/Inspectio
 
 export default function Inspections() {
     return (
-        <div className=" flex flex-col gap-[15px] border-[2px] flex-1 bg-white border-[#EAEBF0] lg:mr-[10px]   p-[20px] ">
-            <MainHeader />
+        <div className=" page">
+            <MainHeader/>
             <InspectionsFilter />
-            <div className="flex flex-col gap-[10px]">
+            <div className="flex flex-col gap-2.5">
                 <SectionHeader icon={<FaFileAlt />} header="Inspections Request">
-                    <div className="flex gap-[10px]">
+                    <div className="flex gap-2.5">
                         {/* <button className="flex justify-center items-center w-[18px] h-[18px] text-[10px] text-white bg-[#000] rounded-[6px]"><FaPlus   /></button> */}
                         {/* <CreateInspection /> */}
                     </div>

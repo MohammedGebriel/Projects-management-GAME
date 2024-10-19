@@ -5,6 +5,50 @@
 @tailwind utilities;
 
 @layer components {
+    /* Pages  */
+    .page {
+        @apply flex flex-col gap-4 border-2 flex-1 bg-white border-pagesBorderColor xl:mr-2  p-5
+    }
+    .card {
+        @apply rounded-xl p-2.5 lg:px-5 pt-2.5 border border-mainBorder shadow flex flex-col gap-2.5
+    }
+    .link {
+        @apply text-linkColor underline font-semibold text-xs
+    }
+    .progress-box {
+        @apply rounded-2xl w-full border border-mainBorder shadow p-1.5 flex flex-col items-center justify-center
+    }
+    .search-input {
+        @apply w-full outline-none text-xs  h-9 rounded-xl py-1.5 px-5 border border-mainBorder shadow
+    }
+    .search-input-icon {
+        @apply absolute top-1/2 -translate-y-1/2 right-4 lg:text-xl text-secondColor
+    }
+    .search-prev-button {
+        @apply size-8 text-mainBorder bg-white border border-mainBorder flex justify-center items-center  text-sm
+    }
+    .search-next-button {
+        @apply size-8 text-inprogressColor  bg-white border border-mainBorder flex justify-center items-center  text-sm
+    }
+    .search-more-button {
+        @apply text-inprogressColor  text-xl
+    }
+    .items-prev-button {
+        @apply text-linkColor flex justify-center items-center  text-base
+    }
+    .items-next-button {
+        @apply text-linkColor flex justify-center items-center  text-base
+    }
+    .add-button {
+        @apply flex justify-center items-center size-5 text-xs text-white bg-black rounded-md
+    }
+
+    /* MileStones Pages */
+    .milestone-button {
+        @apply p-1.5 rounded-2xl bg-linkColor size-8 flex justify-center items-center text-white text-lg
+    }
+    
+
     /* Forms */
     .form-container-modal {
         @apply rounded-xl px-5  py-5 lg:px-10 bg-white shadow flex flex-col gap-3 min-w-72 lg:min-w-96
@@ -23,9 +67,6 @@
     }
     .action-button {
         @apply h-12 rounded-lg flex justify-center items-center bg-brandColor w-full text-white
-    }
-    .add-button {
-        @apply flex justify-center items-center size-5 text-xs text-white bg-black rounded-md
     }
     .action-buttons-container {
         @apply flex gap-3 mt-3

@@ -3,7 +3,7 @@ import TasksProgressBox from "./TasksProgressBox";
 export default function TasksProgress() {
     return (
         <div className="flex md:justify-center">
-            <div className="w-full grid md:grid-cols-3 xl:grid-cols-4 gap-[20px]" >
+            <div className="w-full grid md:grid-cols-3 xl:grid-cols-4 gap-5" >
                 <TasksProgressBox  percentage={60} task_title="Task Title"/>
                 <TasksProgressBox  percentage={90} task_title="Task Title"/>
                 <TasksProgressBox  percentage={100} task_title="Task Title"/>

@@ -24,7 +24,6 @@ export default function AllRoutesProvider() {
         <Routes>
         <Route path="/" element={<Root />}>
             <Route index element={<Projects />} />
-            <Route path="new-project" element={<NewProject />} />
             <Route path="projects/:id/overview" element={<Overview />} />
             <Route path="projects/:id/statistics" element={<Statistics />} />
             <Route path="projects/:id/wbs" element={<WBS />} />
@@ -39,6 +38,7 @@ export default function AllRoutesProvider() {
             <Route path="projects/:id/materials/returns" element={<Returns />} />
             <Route path="projects/:id/services" element={<Services />} />
             <Route path="projects/:id/members" element={<Members />} />
+            <Route path="new-project" element={<NewProject />} />
         </Route>
         </Routes>
     );

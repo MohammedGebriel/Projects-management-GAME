@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 
 export default function Layout({children}:Layout_TP) {
     return (
-        <div className="flex bg-[#F2F0F9]">
+        <div className="flex bg-mainBackground">
             <Sidebar />
             {children}
             <Notifications />
